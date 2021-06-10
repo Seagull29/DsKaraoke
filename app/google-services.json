@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "903813436898",
+    "project_id": "dskaraoke-ef642",
+    "storage_bucket": "dskaraoke-ef642.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903813436898:android:debae7ab5352e6978f95bb",
+        "android_client_info": {
+          "package_name": "com.example.dskaraoke"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903813436898-svoja0ge4m1j5u64179qcnf2lhv9t05f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjNsZwvGYKx7rxMAU_hsv6qslyoKhGHrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903813436898-svoja0ge4m1j5u64179qcnf2lhv9t05f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
