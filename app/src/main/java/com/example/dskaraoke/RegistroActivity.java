@@ -80,10 +80,10 @@ public class RegistroActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(RegistroActivity.this, "Usuario creado exitosamente", Toast.LENGTH_LONG);
+                            Toast.makeText(RegistroActivity.this, "Usuario creado exitosamente", Toast.LENGTH_LONG).show();
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         } else {
-                            Toast.makeText(RegistroActivity.this, "Se produjo un error, usuario no creado" + task.getException().getMessage(), Toast.LENGTH_LONG);
+                            Toast.makeText(RegistroActivity.this, "Se produjo un error, usuario no creado" + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                             pbRegistro.setVisibility(View.GONE);
                         }
                     }

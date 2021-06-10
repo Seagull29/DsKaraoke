@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void Registro() {
-        startActivity(new Intent(getApplicationContext(), RegistroActivity.class));
+        startActivity(new Intent(MainActivity.this, RegistroActivity.class));
     }
 
     @Override
@@ -45,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Ini();
         fAuth = FirebaseAuth.getInstance();
-        if (fAuth.getCurrentUser() != null) {
+        /*if (fAuth.getCurrentUser() != null) {
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
             finish();
-        }
-
+        }*/
+        pbLogin.setVisibility(View.INVISIBLE);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
-                pbLogin.setVisibility(view.VISIBLE);
+                pbLogin.setVisibility(View.VISIBLE);
 
 
                 // enviar datos a firebase como email, contraseña - oyente que nos confirma si el registro se realizo correctamente
@@ -74,11 +74,11 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(MainActivity.this, "Inicio de sesion en proceso", Toast.LENGTH_LONG);
+                            Toast.makeText(MainActivity.this, "Inicio de sesion en proceso", Toast.LENGTH_LONG).show();
                             startActivity(new Intent(getApplicationContext(), LivingActivity.class));
                             finish();
                         } else {
-                            Toast.makeText(MainActivity.this, "No se pudo iniciar sesio" + task.getException().getMessage(), Toast.LENGTH_LONG);
+                            Toast.makeText(MainActivity.this, "No se pudo iniciar sesio" + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                             pbLogin.setVisibility(View.GONE);
                         }
                     }
