@@ -5,11 +5,13 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Sing With Us"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DsKaraoke">
-        <activity android:name=".MainActivity"></activity>
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <activity android:name=".MainActivity">
+        </activity>
         <activity android:name=".SplashActivity"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
             <intent-filter>
