@@ -4,68 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#59D0D5"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:padding="30dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="30dp">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:gravity="center"
             android:layout_marginBottom="20dp"
-            android:textSize="30dp"
-            android:text="Autenticacion" />
+            android:gravity="center"
+            android:text="Sing With Us"
+            android:textSize="30dp" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="18dp"
-            android:layout_marginBottom="30dp"
             android:layout_height="wrap_content"
-            android:text="Inicio de sesion" />
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Inicio de sesion"
+            android:textSize="18dp" />
 
         <EditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:layout_marginBottom="10dp"
-            android:inputType="textPersonName"
-            android:hint="Email" />
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/etContraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:layout_marginBottom="20dp"
-            android:inputType="textPassword"
-            android:hint="Contraseña" />
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/boton"
             android:layout_marginBottom="10dp"
+            android:background="@drawable/boton"
             android:text="Iniciar sesion" />
 
         <TextView
             android:id="@+id/tvRegistro"
             android:layout_width="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_marginBottom="30dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
             android:text="¿Nuevo aqui? Crear cuenta" />
 
         <ProgressBar
